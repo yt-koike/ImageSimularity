@@ -6,7 +6,6 @@ st.title("画像類似度比較 Web アプリ")
 filepath1 = st.file_uploader('画像をアップロードしてください.', type=['jpg', 'jpeg', 'png'],key=1)
 filepath2 = st.file_uploader('画像をアップロードしてください.', type=['jpg', 'jpeg', 'png'],key=2)
 
-st.write(st.get_container_width)
 if filepath1 is not None and filepath2 is not None:
     st.image([filepath1,filepath2], width=300)
    
